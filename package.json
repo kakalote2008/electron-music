@@ -8,7 +8,7 @@
   "author": "zhangwenbo",
   "scripts": {
     "start": "electron .",
-    "build":"electron-builder"
+    "build": "electron-builder"
   },
   "dependencies": {
     "jquery": "^3.3.1"
@@ -26,7 +26,7 @@
     },
     "win": {
       "target": [
-        "msi"
+        "nsis"
       ]
     }
   }
