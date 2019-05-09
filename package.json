@@ -7,12 +7,27 @@
   "version": "1.0.0",
   "author": "zhangwenbo",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build":"electron-builder"
   },
   "dependencies": {
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "electron": "4.1.1"
+    "electron": "4.1.1",
+    "electron-builder": "^20.39.0"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "msi"
+      ]
+    }
   }
 }
