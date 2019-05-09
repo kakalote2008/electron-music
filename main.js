@@ -1,11 +1,12 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow } = require('electron')
+const robot = require("robotjs");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,
@@ -20,8 +21,28 @@ function createWindow () {
   // mainWindow.loadURL('http://118.190.90.35/music/');
   // mainWindow.webContents.openDevTools();
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
 
+
+  // setTimeout(function () {
+  //   robot.moveMouseSmooth(666, 474);
+  //   robot.mouseClick();
+  // }, 2000);
+
+  // setTimeout(function () {
+  //   robot.typeStringDelayed('Hello World!');
+  // }, 3000);
+
+  // setTimeout(function () {
+  //   robot.moveMouseSmooth(334, 161);
+  //   robot.mouseClick();
+  // }, 5000);
+
+
+
+  // setInterval(function () {
+  //   var mouse = robot.getMousePos();
+  //   console.log("Mouse is at x:" + mouse.x + " y:" + mouse.y);
+  // }, 1000);
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
